@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+     h2 {
+        color: blue;
+        background: chocolate;
+        text-align: center;
+        font-size: 4rem;
+    }
+    body {
+        background-color: cornsilk;  
+        }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input id="in2" type="text" placeholder="browser">
+    <button onclick="browser(in2)">Browsers Checking</button>
+    <script>
+        console.log(in2)
+        function browser(in2) {
+            let browser = in2;
+        if (this.browser == 'Edge') {
+            alert("You've got the Edge!");
+        }else if (this.browser == 'Chrome'|| 'Firefox'|| 'Safari'|| 'Opera'){
+            alert("Okay we support these browsers too");
+        }else
+            alert('We hope that this page looks ok');
+        }
+    </script>
+
+</body>
+</html>

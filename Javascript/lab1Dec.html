@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str = "";
+        // function ucFirst(str){
+        //     return str.slice(0,1).toUpperCase() + String(str).substring(1)
+        // }
+
+        // function checkSpam(str){
+        //     return str.includes("xxx") || str.includes("viagra")
+        // }
+
+        // function truncate(str, maxlength) {
+        //     if(str.length > maxlength){
+        //         str.substring(0, maxlength -1) + "..."
+        //     }else{
+        //     return str
+        //     }
+        // }
+
+        // function extractCurrencyValue(str, rate){
+        //     if(str.substring(0, 1) == "$"){
+        //         return parseInt(str.substring(1)) * rate
+        //     }else{
+        //         return str
+        //     }
+        // }
+
+        // alert(ucFirst("guyguyguyguyguyguyguys"))
+        // alert(extractCurrencyValue("$120", 30.5) === 3660);
+        // alert(truncate("What I'd like to tell on this topic is:", 20))
+
+        let songType = ["Jazz", "Blues"];
+        songType.push("Rock-n-Roll");
+        songType[Math.floor(songType.length/2)] = "Classic";
+        let deleteType = songType.shift();
+        songType.unshift("Rap", "Reggae");
+        console.log(songType);
+
+    </script>
+    
+</body>
+</html>
