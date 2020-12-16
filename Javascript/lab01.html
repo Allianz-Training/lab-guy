@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("ใส่ตัวเลข...อีดอก")
+        let star = "";
+        function draw1(num){
+            for(let i=0; i<num; i++){
+                star+="*"
+            }
+            return star;
+        }
+        function draw2(num){
+            for(let i=0; i<num; i++){
+                for(let j=0; j<num; j++){
+                    star+="*";
+                }
+                star += "\n";
+            }
+            return star;
+        }
+        function draw3(num){
+
+            for(let i=0; i<num; i++){
+                for(let j=0; j<num; j++){
+                    star += j+1;
+                }
+                star += "\n";
+            }
+            return star;
+        }
+        function draw4(num){
+
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+            star += i;
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw5(num){
+
+        for(let i=num; i>0; i--){
+            for(let j=num; j>0; j--){
+            star += i;
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw6(num){
+
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+            star += ++count;
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw7(num){
+        max = num * num;
+        for(let i=num; i>=1; i--){
+            for(let j=num; j>=1; j--){
+            star += max-- ;
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw8(num){
+        for(let i=0; i<num;i++){
+            star += i * 2 ;
+            star += "\n";
+            }
+        return star;
+        }
+
+        function draw9(num){
+        for(let i=1; i<=num;i++){
+            star += i * 2 ;
+            star += "\n";
+            }
+        return star;
+        }
+
+        function draw10(num){
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                let total =i*j;
+            star += total;
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw11(num){
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (i == j){
+                    star += "_"
+                }else {
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw12(num){
+        let count = num;
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (j == count){
+                    star += "_"
+                }else {
+            star += "*";
+                }   
+            }
+            count -= 1;
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw13(num){
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (j > i){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw14(num){
+        for(let i=1; i<=num; i++){
+            for(let j=num; j>= 1; j--){
+                if (i > j){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw15(num){
+        let count = 1;
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (j > i){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            count += 1;
+            star += "\n";
+        }
+        for(let i=2; i<=num; i++){
+            for(let j=num; j>= 1; j--){
+                if (i > j){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw17(num){
+        for(let i=num; i>=1; i--){
+            for(let j=1; j<=num; j++){
+                if (j < i){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw18(num){
+        for(let i=1; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (j < i){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw19(num){
+        for(let i=1; i<=num; i++){
+            for(let j=num; j>=1; j--){
+                if (j > i){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        for(let i=2; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (i > j){
+                    star += "_"
+                }else { 
+            star += "*";
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw20(num){
+        let count = 1;
+        for(let i=1; i<=num; i++){
+            for(let j=num; j>=1; j--){
+                if (j > i){
+                    star += "_"
+                }else { 
+            star += count++;
+                }   
+            }
+            star += "\n";
+        }
+        for(let i=2; i<=num; i++){
+            for(let j=1; j<=num; j++){
+                if (i > j){
+                    star += "_"
+                }else { 
+            star += count++;
+                }   
+            }
+            star += "\n";
+        }
+        return star;
+        }
+
+        function draw21(num){
+        
+        return star;
+        }
+
+
+
+
+
+
+
+
+        
+        alert(draw13(num))
+    </script>
+</body>
+</html>
