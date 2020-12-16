@@ -1,0 +1,22 @@
+Q1- SELECT S.sname, s.age FROM Sailors S
+Q2- SELECT sname FROM Sailors INNER JOIN Reserves on Sailors.sid = 
+	Reserves.sid WHERE Reserves.bid = 103 	
+Q3- SELECT sid FROM Reserves INNER JOIN Boats on Reserves.bid = 
+	Boats.bid WHERE Lower(Boats.color) = "red"
+Q4- SELECT sname FROM Sailors INNER JOIN Reserves  on Sailors.sid = 
+	Reserves.sid INNER JOIN Boats on Reserves.bid = 
+	Boats.bid WHERE Lower(Boats.color) = "red"
+Q5- SELECT boats.Color FROM Sailors INNER JOIN Reserves on Sailors.sid =
+	Reserves.sid inner JOIN Boats on Reserves.bid =
+	boats.bid where Sailors.sname="Lubber"
+
+
+
+
+
+
+
+
+
+
+INSERT INTO Sailors VALUES (22, "Ductin", 7, 45.0),(29, "Brutus", 1, 33.0),(31, "Lubber", 8, 25.5),(32, "Andy", 8, 25.5),(58, "Rusty", 10, 35.0),(64, "Horatio", 7, 35.0), (71, "Zorba", 10, 16.0),(74, "Horatio", 9, 35.0),(85, "Art", 3, 25.5),(95, "Bob", 3, 63.5)
