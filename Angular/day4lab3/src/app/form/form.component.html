@@ -1,0 +1,26 @@
+
+<form [formGroup]="form">
+<div>
+    <h3>Name<span style="color: red;" *ngIf="form.get('name').errors?.required"> *</span>
+    </h3>
+    <input formControlName="name"/>
+</div>
+<div>
+    <h3>Email<span style="color: red;" *ngIf="form.get('email').errors?.required"> *</span>
+    </h3>
+    <input formControlName="email"/>
+</div>
+<div>
+    <h3>Portal Address<span style="color: red;" *ngIf="form.get('address').errors?.required"> *</span>
+    </h3>
+    <input formControlName="address"/>
+</div>
+<div>
+    <h3>Comments</h3>
+    <input formControlName="comments"/>
+</div>
+<br>
+<div>
+    <Button>Submit</Button>
+</div>
+</form>
